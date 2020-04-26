@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/periodic-table",
   siteMetadata: {
     title: `periodic-table`,
     description: `Basic periodic table, displaying element name, number, symbol, atomic mass, first ionisation energy, electronegativity and category.`,
