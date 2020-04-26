@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="app preview" src="./src/images/" />
+  <img alt="app preview" src="./src/images/periodic-table-mve.png" />
 </p>
 <h1 align="center">
   periodic-table
