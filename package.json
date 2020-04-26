@@ -2,7 +2,7 @@
   "name": "periodic-table",
   "private": true,
   "description": "Basic periodic table, displaying element name, number, symbol, atomic mass, first ionisation energy, electronegativity and category.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "David Way",
   "dependencies": {
     "gatsby": "^2.20.35",
@@ -19,6 +19,7 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "2.0.4"
   },
   "keywords": [
@@ -32,13 +33,14 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/David-Way/periodic-table"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/David-Way/periodic-table/issues"
   }
 }
