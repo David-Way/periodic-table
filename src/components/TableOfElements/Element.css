@@ -1,0 +1,243 @@
+.c-element {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 6px solid black;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.c-element__symbol {
+    font-style: normal;
+    font-size: 5.75rem;
+}
+
+.c-element__name {
+    font-size: 2.25rem;
+    margin-block-start: 0;
+}
+
+.c-element__container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.c-element__header {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 99999;
+}
+
+.c-element__aside {
+    flex: 1;
+}
+
+.c-element__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.c-element-dl {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-between;
+    margin-top: 0;
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.c-element-dl:last-of-type {
+    margin-right: 0;
+}
+
+.c-element-dl dt {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.c-element-dl dd {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-inline-start: 0;
+}
+.c-element-dl--align\:right {
+    text-align: right;
+}
+
+.c-element-dl--bold dd,
+.c-element-dl--lead dd {
+    font-weight: 700;
+}
+
+.c-element-dl--lead dd {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
+/* Positioning */
+[data-period="1"] {
+    grid-column-start: 1;
+}
+
+[data-period="2"] {
+    grid-column-start: 2;
+}
+
+[data-period="3"] {
+    grid-column-start: 3;
+}
+
+[data-period="4"] {
+    grid-column-start: 4;
+}
+
+[data-period="5"] {
+    grid-column-start: 5;
+}
+
+[data-period="6"] {
+    grid-column-start: 6;
+}
+
+[data-period="7"] {
+    grid-column-start: 7;
+}
+
+[data-period="8"] {
+    grid-column-start: 8;
+}
+
+[data-period="9"] {
+    grid-column-start: 9;
+}
+
+[data-period="10"] {
+    grid-column-start: 10;
+}
+
+[data-period="11"] {
+    grid-column-start: 11;
+}
+
+[data-period="12"] {
+    grid-column-start: 12;
+}
+
+[data-period="13"] {
+    grid-column-start: 13;
+}
+
+[data-period="14"] {
+    grid-column-start: 14;
+}
+
+[data-period="15"] {
+    grid-column-start: 15;
+}
+
+[data-period="16"] {
+    grid-column-start: 16;
+}
+
+[data-period="17"] {
+    grid-column-start: 17;
+}
+
+[data-period="18"] {
+    grid-column-start: 18;
+}
+
+/* Colors */
+[data-element-group="diatomic nonmetal"] {
+    color: white;
+    background-color: #6929c4;
+}
+
+[data-element-group="noble gas"] {
+    color: black;
+    background-color: #1192e8;
+}
+
+[data-element-group="unknown, predicted to be noble gas"] {
+    color: black;
+    background-color: #1192e8;
+}
+
+[data-element-group="alkali metal"] {
+    color: white;
+    background-color: #005d5d;
+}
+
+[data-element-group="unknown, but predicted to be an alkali metal"] {
+    background-color: #005d5d;
+}
+
+[data-element-group="alkaline earth metal"] {
+    color: white;
+    background-color: #9f1853;
+}
+
+[data-element-group="metalloid"] {
+    color: white;
+    background-color: #198038;
+    /* box-shadow: inset 0px 0px 0px 6px #fff; */
+}
+
+[data-element-group="unknown, probably metalloid"] {
+    color: white;
+    background-color: #198038;
+}
+
+[data-element-group="polyatomic nonmetal"] {
+    color: white;
+    background-color: #002d9c;
+}
+
+[data-element-group="diatomic nonmetal"] {
+    color: black;
+    background-color: #ee5396;
+}
+
+[data-element-group="post-transition metal"] {
+    color: black;
+    background-color: #b28600;
+}
+
+[data-element-group="unknown, probably post-transition metal"] {
+    color: black;
+    background-color: #b28600;
+}
+
+[data-element-group="transition metal"] {
+    color: black;
+    background-color: #009d9a;
+}
+
+[data-element-group="unknown, probably transition metal"] {
+    color: black;
+    background-color: #009d9a;
+}
+
+[data-element-group="lanthanide"] {
+    color: white;
+    background-color: #012749;
+    grid-row-start: 10;
+}
+
+[data-element-group="actinide"] {
+    color: black;
+    background-color: #a56eff;
+    grid-row-start: 11;
+}
+
+[data-element-group*="unknown"]:after { /* contains selector */
+    content: '?';
+    font-size: 1rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
